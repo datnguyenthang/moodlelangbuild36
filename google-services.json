@@ -1,37 +1,42 @@
 {
   "project_info": {
-    "project_number": "642568134939",
-    "firebase_url": "https://ats-training.firebaseio.com",
-    "project_id": "ats-training",
-    "storage_bucket": "ats-training.appspot.com"
+    "project_number": "694767596569",
+    "firebase_url": "https://moodlemobile-push.firebaseio.com",
+    "project_id": "moodlemobile-push",
+    "storage_bucket": "moodlemobile-push.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:642568134939:android:e9f210040a18df95",
+        "mobilesdk_app_id": "1:694767596569:android:a4cdad4d168c9d1a",
         "android_client_info": {
-          "package_name": "vn.com.fecredit.training"
+          "package_name": "com.moodle.moodlemobile"
         }
       },
       "oauth_client": [
         {
-          "client_id": "642568134939-q6jlh4lelcrgo5fiaqjo4vkav5ajjf6c.apps.googleusercontent.com",
+          "client_id": "694767596569-icveqqa2n56oh44l6ev1dr2oh67nh8il.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCn7p_B6mKIisHjC1ck6fDC8aWegVdJ2iM"
+          "current_key": "AIzaSyCb2zogu0P_aZ2LNgdwzshWExITPKTXJyk"
+        },
+        {
+          "current_key": "AIzaSyDRT1HwT0gSsTty0whOVtoNKAh8SPrJXLE"
         }
       ],
       "services": {
+        "analytics_service": {
+          "status": 1
+        },
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "642568134939-q6jlh4lelcrgo5fiaqjo4vkav5ajjf6c.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
         }
       }
     }
