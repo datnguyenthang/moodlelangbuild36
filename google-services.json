@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "642568134939",
+    "firebase_url": "https://ats-training.firebaseio.com",
+    "project_id": "ats-training",
+    "storage_bucket": "ats-training.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642568134939:android:e9f210040a18df95",
+        "android_client_info": {
+          "package_name": "vn.com.fecredit.training"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642568134939-q6jlh4lelcrgo5fiaqjo4vkav5ajjf6c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn7p_B6mKIisHjC1ck6fDC8aWegVdJ2iM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642568134939-q6jlh4lelcrgo5fiaqjo4vkav5ajjf6c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
