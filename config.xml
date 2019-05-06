@@ -4,8 +4,8 @@
         xmlns="http://www.w3.org/ns/widgets" 
         xmlns:android="http://schemas.android.com/apk/res/android" 
         xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>FE ATS</name>
-    <description>FE ATS</description>
+    <name>Moodle</name>
+    <description>Moodle</description>
     <author email="dat.nguyen.2@fecredit.com.vn" href="https://training.fecredit.com.vn/">FE ATS</author>
     <edit-config target="CFBundleShortVersionString" file="*-Info.plist" mode="merge">
         <string>3.6.1</string>
@@ -151,7 +151,7 @@
         <variable name="FCM_VERSION" value="17.0.+" />
     </gap:plugin>
 
-    <edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:name='FEATS']" mode="merge">
+    <edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:name='Moodle']" mode="merge">
         <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|screenLayout|smallestScreenSize" android:debuggable="true"></activity>
     </edit-config>
 
