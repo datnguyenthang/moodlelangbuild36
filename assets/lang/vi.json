@@ -434,6 +434,7 @@
     "core.courses.sendpaymentbutton": "Gửi thanh toán qua PayPal",
     "core.courses.sortbycourses": "Sắp xếp bởi khóa học",
     "core.courses.sortbydates": "Sắp xếp bởi thời gian",
+    "core.courses.startdate": "Ngày bắt đầu",
     "core.courses.timeline": "Mốc thời gian",
     "core.courses.totalcoursesearchresults": "Tổng công các khóa học: {{$a}}",
     "core.currentdevice": "Thiết bị hiện tại",
