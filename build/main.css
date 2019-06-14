@@ -50695,7 +50695,7 @@ ion-app.app-root page-addon-notifications-settings .toggle {
 }
 
 .qrscanner {
-  background: transparent !important;
+  background: none;
 }
 
 .qrscanner-area {
@@ -50720,8 +50720,8 @@ ion-app.app-root page-addon-notifications-settings .toggle {
   margin: 0 10px;
 }
 
-ion-app.cameraView, ion-app.cameraView ion-content, ion-app.cameraView .nav-decor {
-  background: transparent none !important;
+.transparentBody {
+  background: transparent !important;
 }
 
 addon-qtype-ddimageortext .qtext {
