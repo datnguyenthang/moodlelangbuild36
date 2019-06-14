@@ -50724,6 +50724,10 @@ ion-app.app-root page-addon-notifications-settings .toggle {
   background: transparent !important;
 }
 
+ion-app.app-root .ion-page {
+  background: transparent !important;
+}
+
 addon-qtype-ddimageortext .qtext {
   margin-bottom: 0.5em;
   display: block;
