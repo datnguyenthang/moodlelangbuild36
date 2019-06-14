@@ -50695,11 +50695,14 @@ ion-app.app-root page-addon-notifications-settings .toggle {
 }
 
 .qrscanner {
-  background: transparent !important .qrscanner -area;
-  background-width: 100%;
-  background-height: 85%;
-  /* background: url(../assets/img/scanner.svg) no-repeat center center; */
-  background-background-size: contain;
+  background: transparent !important;
+}
+
+.qrscanner .qrscanner-area {
+  width: 100%;
+  height: 85%;
+  background: url(../assets/img/scanner.svg) no-repeat center center;
+  background-size: contain;
 }
 
 .qrscanner .button-bottom {
