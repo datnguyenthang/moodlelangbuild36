@@ -50720,6 +50720,10 @@ ion-app.app-root page-addon-notifications-settings .toggle {
   margin: 0 10px;
 }
 
+ion-app.cameraView, ion-app.cameraView ion-content, ion-app.cameraView .nav-decor {
+  background: transparent none !important;
+}
+
 addon-qtype-ddimageortext .qtext {
   margin-bottom: 0.5em;
   display: block;
