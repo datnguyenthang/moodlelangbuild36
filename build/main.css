@@ -50695,7 +50695,7 @@ ion-app.app-root page-addon-notifications-settings .toggle {
 }
 
 .qrscanner {
-  background: none;
+  background: transparent !important;
 }
 
 .qrscanner-area {
