@@ -50695,7 +50695,7 @@ ion-app.app-root page-addon-notifications-settings .toggle {
 }
 
 .qrscanner {
-  background: transparent !important;
+  background: none;
 }
 
 .qrscanner .qrscanner-area {
@@ -50720,8 +50720,21 @@ ion-app.app-root page-addon-notifications-settings .toggle {
   margin: 0 10px;
 }
 
-ion-content.content-ios {
+.qrscanner ion-content {
   background: transparent !important;
+}
+
+.qrscanner ion-content.content-ios {
+  background: transparent !important;
+}
+
+.qrscanner [app-viewport], .qrscanner [overlay-portal], .qrscanner [nav-viewport], .qrscanner [tab-portal], .qrscanner .nav-decor {
+  display: none !important;
+  background: none transparent !important;
+}
+
+.qrscanner ion-content, .qrscanner body, .qrscanner .app-root, .qrscanner ion-app, .qrscanner .scroll-content, .qrscanner .fixed-content, .qrscanner page-app {
+  background: none transparent !important;
 }
 
 .transparentBody {
