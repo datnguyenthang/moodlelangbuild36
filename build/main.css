@@ -50716,7 +50716,7 @@ page-addon-my-qrscanner .button-bottom .fab {
   margin: 0 10px;
 }
 
-page-addon-my-qrscanner ion-content.content-ios {
+page-addon-my-qrscanner ion-content.content-ios, page-addon-my-qrscanner ion-content.qrscanner {
   background: transparent !important;
 }
 
