@@ -2,7 +2,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
-        id        = "com.moodle.moodlemobile"
+        id        = "vn.com.fecredit.training"
         versionCode = "36100"
         android-versionCode="36100"
         version   = "3.6.1">
@@ -12,7 +12,7 @@
         FE ATS MOBILE
     </description>
 
-    <author href="http://moodle.com" email="mobile@moodle.com">
+    <author href="https://training.fecredit.com.vn/" email="dat.nguyen.2@fecredit.com.vn">
         ATS team
     </author>
 
@@ -140,7 +140,7 @@
     <gap:plugin name="cordova-clipboard" source="npm" spec="1.2.1" />
     <gap:plugin name="cordova-plugin-badge" source="npm" spec="0.8.8" />
     <gap:plugin name="cordova-plugin-camera" source="npm" spec="4.0.3" />
-    <gap:plugin name="cordova-plugin-qrscanner" source="npm" spec="2.5.0" />
+    <gap:plugin name="cordova-plugin-qrscanner" source="npm" spec="3.0.1" />
     <gap:plugin name="cordova-plugin-customurlscheme" source="npm" spec="4.3.0">
         <param name="URL_SCHEME" value="moodlemobile" />
     </gap:plugin>
