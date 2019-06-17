@@ -194,7 +194,7 @@ var AddonQRScannerPage = /** @class */ (function () {
     AddonQRScannerPage.prototype.ionViewWillEnter = function () {
         this.setupScanner();
         this.qrScanner.show();
-        window.document.querySelector('ion-app > .app-root').classList.add('transparentBody');
+        window.document.querySelector('ion-app').classList.add('transparentBody');
     };
     AddonQRScannerPage.prototype.ionViewWillLeave = function () {
         // Hide window.document.querySelector('ion-app > .app-root').classList.remove('hide');

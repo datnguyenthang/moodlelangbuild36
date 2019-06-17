@@ -50695,7 +50695,7 @@ ion-app.app-root page-addon-notifications-settings .toggle {
 }
 
 .qrscanner {
-  background: none;
+  background: transparent !important;
 }
 
 .qrscanner .qrscanner-area {
@@ -50720,35 +50720,35 @@ ion-app.app-root page-addon-notifications-settings .toggle {
   margin: 0 10px;
 }
 
-.qrscanner ion-content {
+.qrscanner ion-content, .qrscanner ion-content.content-ios, .qrscanner ion-app.app-root .ion-page {
   background: transparent !important;
-}
-
-.qrscanner ion-content.content-ios {
-  background: transparent !important;
-}
-
-.qrscanner [app-viewport], .qrscanner [overlay-portal], .qrscanner [nav-viewport], .qrscanner [tab-portal], .qrscanner .nav-decor {
-  display: none !important;
-  background: none transparent !important;
-}
-
-.qrscanner ion-content, .qrscanner body, .qrscanner .app-root, .qrscanner ion-app, .qrscanner .scroll-content, .qrscanner .fixed-content, .qrscanner page-app {
-  background: none transparent !important;
 }
 
 .transparentBody {
-  background: transparent !important;
+  background: transparent none !important;
 }
 
+ion-app.transparentBody,
+ion-app.transparentBody ion-content,
+ion-app.transparentBody .nav-decor {
+  background: transparent none !important;
+}
+
+/*
 ion-app.ios {
   background: transparent !important;
 }
-
 ion-app.app-root .ion-page {
   background: transparent !important;
 }
-
+ion-content, body, .app-root, ion-app, .scroll-content, .fixed-content, page-app {
+  background: none transparent !important;
+}
+[app-viewport], [overlay-portal], [nav-viewport], [tab-portal], .nav-decor {
+  display: none !important;
+  background: none transparent !important;
+}
+*/
 addon-qtype-ddimageortext .qtext {
   margin-bottom: 0.5em;
   display: block;
