@@ -99,7 +99,6 @@
 
     <platform name="ios">
         <resource-file src="GoogleService-Info.plist" />
-        <preference name="UseSwiftLanguageVersion" value="5" />
         <icon src="resources/ios/icon/icon.png" width="57" height="57"/>
         <icon src="resources/ios/icon/icon@2x.png" width="114" height="114"/>
         <icon src="resources/ios/icon/icon-40.png" width="40" height="40"/>
@@ -141,6 +140,7 @@
     <gap:plugin name="cordova-clipboard" source="npm" spec="1.2.1" />
     <gap:plugin name="cordova-plugin-badge" source="npm" spec="0.8.8" />
     <gap:plugin name="cordova-plugin-camera" source="npm" spec="4.0.3" />
+    <gap:plugin name="cordova-plugin-qrscanner" source="npm" spec="3.0.1" />
     <gap:plugin name="cordova-plugin-customurlscheme" source="npm" spec="4.3.0">
         <param name="URL_SCHEME" value="moodlemobile" />
     </gap:plugin>
