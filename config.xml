@@ -141,7 +141,7 @@
     <gap:plugin name="cordova-clipboard" source="npm" spec="1.2.1" />
     <gap:plugin name="cordova-plugin-badge" source="npm" spec="0.8.8" />
     <gap:plugin name="cordova-plugin-camera" source="npm" spec="4.0.3" />
-    <gap:plugin name="cordova-plugin-qrscanner" source="git" spec="https://github.com/datnguyenthang/cordova-plugin-qrscanner" />
+    <gap:plugin name="cordova-plugin-qrscanner" source="git" version="https://github.com/datnguyenthang/cordova-plugin-qrscanner#master" spec="3.0.1" />
     <gap:plugin name="cordova-plugin-customurlscheme" source="npm" spec="4.3.0">
         <param name="URL_SCHEME" value="moodlemobile" />
     </gap:plugin>
