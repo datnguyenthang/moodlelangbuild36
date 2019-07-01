@@ -56658,8 +56658,8 @@ core-courses-course-list-group .card-category-title.category-group-title-backgro
 
 core-courses-course-list-group .card-category-title .title-category {
   width: 100%;
-  margin-right: 30px;
-  margin-left: 55px;
+  margin-right: 10px;
+  margin-left: 10px;
   text-align: left;
 }
 
@@ -56676,11 +56676,10 @@ core-courses-course-list-group .card-category-title .wrap-tag {
 }
 
 core-courses-course-list-group .card-category-title .thumb-category {
-  width: 40px;
-  height: 40px;
+  width: 50px;
   display: table-cell;
   margin-left: 10px;
-  position: fixed;
+  position: relative;
 }
 
 core-courses-course-list-group .card-category-title .thumb-category p {
@@ -56701,7 +56700,7 @@ core-courses-course-list-group .card-category-title .ion {
   font-size: x-large;
   font-weight: 600;
   right: 10px;
-  position: fixed;
+  position: relative;
 }
 
 core-courses-course-list-group .card-category-title h6, core-courses-course-list-group .card-category-title ion-app.app-root .item .item-heading, ion-app.app-root .item core-courses-course-list-group .card-category-title .item-heading {
