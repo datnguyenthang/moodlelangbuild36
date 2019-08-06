@@ -187,6 +187,16 @@ var AddonEvaluateInputInfoPage = /** @class */ (function () {
         }
         this.pageLoaded = true;
     };
+    AddonEvaluateInputInfoPage.prototype.ionViewWillEnter = function () {
+        if (this.data.getOrigin() == 'scanner') {
+            this.credForm.controls['coursecode'].setValue(this.data.getData());
+        }
+    };
+    AddonEvaluateInputInfoPage.prototype.ionViewDidEnter = function () {
+        if (this.data.getOrigin() == 'scanner') {
+            this.credForm.controls['coursecode'].setValue(this.data.getData());
+        }
+    };
     AddonEvaluateInputInfoPage.prototype.focusInSelect = function () {
         this.boxClass = 'box';
     };
