@@ -5,7 +5,7 @@
         id        = "vn.com.fecredit.training"
         versionCode = "36102"
         android-versionCode="36102"
-        version   = "3.6.25">
+        version   = "3.6.26">
     <name>FE CREDIT - TRAINING</name>
 
     <description>
@@ -17,7 +17,7 @@
     </author>
 
     <edit-config target="CFBundleShortVersionString" file="*-Info.plist" mode="merge">
-        <string>3.6.25</string>
+        <string>3.6.26</string>
     </edit-config>
 
     <gap:platform name="ios" />
