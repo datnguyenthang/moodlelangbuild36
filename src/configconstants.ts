@@ -40,7 +40,7 @@ export class CoreConfigConstants {
         }
     };
     static gcmpn = '694767596569';
-    static customurlscheme = 'atsmobile';
+    static customurlscheme = 'moodlemobile';
     static siteurl = 'https://training.fecredit.com.vn/';
     static multisitesdisplay = '';
     static skipssoconfirmation = false;
