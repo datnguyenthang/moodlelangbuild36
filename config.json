@@ -1,9 +1,9 @@
 {
     "app_id": "vn.com.fecredit.training",
-    "appname": "FE ATS",
-    "desktopappname": "FE ATS",
-    "versioncode": 3610,
-    "versionname": "3.6.1",
+    "appname": "FE Credit - Training",
+    "desktopappname": "FE Credit - Training",
+    "versioncode": 3627,
+    "versionname": "3.6.27",
     "cache_expiration_time": 300000,
     "default_lang": "vi",
     "languages": {
