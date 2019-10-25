@@ -17,8 +17,8 @@ export class CoreConfigConstants {
     static app_id = 'com.moodle.moodlemobile';
     static appname = 'Moodle Mobile';
     static desktopappname = 'Moodle Desktop';
-    static versioncode = 3600;
-    static versionname = '3.6.0';
+    static versioncode = 3627;
+    static versionname = '3.6.27';
     static cache_expiration_time = 300000;
     static default_lang = 'en';
     static languages: any = {
@@ -40,7 +40,7 @@ export class CoreConfigConstants {
         }
     };
     static gcmpn = '694767596569';
-    static customurlscheme = 'moodlemobile';
+    static customurlscheme = 'atsmobile';
     static siteurl = 'https://training.fecredit.com.vn/';
     static multisitesdisplay = '';
     static skipssoconfirmation = false;
