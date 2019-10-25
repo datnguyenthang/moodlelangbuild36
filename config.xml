@@ -138,7 +138,7 @@
     <gap:plugin name="cordova-plugin-camera" source="npm" spec="4.0.3" />
     <gap:plugin name="phonegap-plugin-barcodescanner" source="npm" spec="8.0.1" />
     <gap:plugin name="cordova-plugin-customurlscheme" source="npm" spec="4.3.0">
-        <param name="URL_SCHEME" value="atsmobile" />
+        <param name="URL_SCHEME" value="moodlemobile" />
     </gap:plugin>
     <gap:plugin name="cordova-plugin-device" source="npm" spec="2.0.2" />
     <gap:plugin name="cordova-plugin-file" source="npm" spec="6.0.1" />

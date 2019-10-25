@@ -12,7 +12,7 @@
     },
     "wsservice": "moodle_mobile_app",
     "wsextservice": "local_mobile",
-    "customurlscheme": "atsmobile",
+    "customurlscheme": "moodlemobile",
     "siteurl": "training.fecredit.com.vn",
     "multisitesdisplay": "",
     "skipssoconfirmation": false,
