@@ -1,17 +1,17 @@
 webpackJsonp([125],{
 
-/***/ 1849:
+/***/ 1850:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonCompetencyCompetencySummaryPageModule", function() { return AddonCompetencyCompetencySummaryPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonCompetencyCourseCompetenciesPageModule", function() { return AddonCompetencyCourseCompetenciesPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__competencysummary__ = __webpack_require__(1989);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_directives_module__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(957);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__coursecompetencies__ = __webpack_require__(1991);
 // (C) Copyright 2015 Martin Dougiamas
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,39 +37,36 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var AddonCompetencyCompetencySummaryPageModule = /** @class */ (function () {
-    function AddonCompetencyCompetencySummaryPageModule() {
+var AddonCompetencyCourseCompetenciesPageModule = /** @class */ (function () {
+    function AddonCompetencyCourseCompetenciesPageModule() {
     }
-    AddonCompetencyCompetencySummaryPageModule = __decorate([
+    AddonCompetencyCourseCompetenciesPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_5__competencysummary__["a" /* AddonCompetencyCompetencySummaryPage */],
+                __WEBPACK_IMPORTED_MODULE_5__coursecompetencies__["a" /* AddonCompetencyCourseCompetenciesPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_3__components_components_module__["a" /* CoreComponentsModule */],
-                __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__["a" /* CoreDirectivesModule */],
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_5__competencysummary__["a" /* AddonCompetencyCompetencySummaryPage */]),
-                __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */].forChild()
+                __WEBPACK_IMPORTED_MODULE_3__directives_directives_module__["a" /* CoreDirectivesModule */],
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_5__coursecompetencies__["a" /* AddonCompetencyCourseCompetenciesPage */]),
+                __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */].forChild(),
+                __WEBPACK_IMPORTED_MODULE_4__components_components_module__["a" /* AddonCompetencyComponentsModule */]
             ],
         })
-    ], AddonCompetencyCompetencySummaryPageModule);
-    return AddonCompetencyCompetencySummaryPageModule;
+    ], AddonCompetencyCourseCompetenciesPageModule);
+    return AddonCompetencyCourseCompetenciesPageModule;
 }());
 
-//# sourceMappingURL=competencysummary.module.js.map
+//# sourceMappingURL=coursecompetencies.module.js.map
 
 /***/ }),
 
-/***/ 1989:
+/***/ 1991:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddonCompetencyCompetencySummaryPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddonCompetencyCourseCompetenciesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_utils_dom__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_split_view_split_view__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_competency__ = __webpack_require__(153);
 // (C) Copyright 2015 Martin Dougiamas
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -92,87 +89,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
-
-
-
 
 
 /**
- * Page that displays a learning plan.
+ * Page that displays the list of competencies of a course.
  */
-var AddonCompetencyCompetencySummaryPage = /** @class */ (function () {
-    function AddonCompetencyCompetencySummaryPage(navCtrl, navParams, domUtils, svComponent, competencyProvider) {
-        this.navCtrl = navCtrl;
-        this.domUtils = domUtils;
-        this.svComponent = svComponent;
-        this.competencyProvider = competencyProvider;
-        this.competencyLoaded = false;
-        this.competencyId = navParams.get('competencyId');
+var AddonCompetencyCourseCompetenciesPage = /** @class */ (function () {
+    function AddonCompetencyCourseCompetenciesPage(navParams) {
+        this.courseId = navParams.get('courseId');
+        this.userId = navParams.get('userId');
     }
-    /**
-     * View loaded.
-     */
-    AddonCompetencyCompetencySummaryPage.prototype.ionViewDidLoad = function () {
-        var _this = this;
-        this.fetchCompetency().then(function () {
-            _this.competencyProvider.logCompetencyView(_this.competencyId).catch(function () {
-                // Ignore errors.
-            });
-        }).finally(function () {
-            _this.competencyLoaded = true;
-        });
-    };
-    /**
-     * Fetches the competency summary and updates the view.
-     *
-     * @return {Promise<void>} Promise resolved when done.
-     */
-    AddonCompetencyCompetencySummaryPage.prototype.fetchCompetency = function () {
-        var _this = this;
-        return this.competencyProvider.getCompetencySummary(this.competencyId).then(function (competency) {
-            _this.competency = competency;
-        }).catch(function (message) {
-            _this.domUtils.showErrorModalDefault(message, 'Error getting competency summary data.');
-        });
-    };
-    /**
-     * Refreshes the competency summary.
-     *
-     * @param {any} refresher Refresher.
-     */
-    AddonCompetencyCompetencySummaryPage.prototype.refreshCompetency = function (refresher) {
-        var _this = this;
-        this.competencyProvider.invalidateCompetencySummary(this.competencyId).finally(function () {
-            _this.fetchCompetency().finally(function () {
-                refresher.complete();
-            });
-        });
-    };
-    /**
-     * Opens the summary of a competency.
-     *
-     * @param {number} competencyId
-     */
-    AddonCompetencyCompetencySummaryPage.prototype.openCompetencySummary = function (competencyId) {
-        // Decide which navCtrl to use. If this page is inside a split view, use the split view's master nav.
-        var navCtrl = this.svComponent ? this.svComponent.getMasterNav() : this.navCtrl;
-        navCtrl.push('AddonCompetencyCompetencySummaryPage', { competencyId: competencyId });
-    };
-    AddonCompetencyCompetencySummaryPage = __decorate([
+    AddonCompetencyCourseCompetenciesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-competency-competency-summary',template:/*ion-inline-start:"/Users/vndtadmin/Desktop/Moodlemobile_lang/src/addon/competency/pages/competencysummary/competencysummary.html"*/'<ion-header>\n    <ion-navbar core-back-button>\n        <ion-title *ngIf="competency">{{ competency.competency.shortname }} <small>{{ competency.competency.idnumber }}</small></ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <ion-refresher [enabled]="competencyLoaded" (ionRefresh)="refreshCompetency($event)">\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n    </ion-refresher>\n    <core-loading [hideUntil]="competencyLoaded">\n        <ion-card *ngIf="competency">\n            <ion-item text-wrap *ngIf="competency.competency.description">\n                <core-format-text [text]="competency.competency.description"></core-format-text>\n            </ion-item>\n            <ion-item text-wrap>\n                <strong>{{ \'addon.competency.path\' | translate }}</strong>\n                {{ competency.comppath.framework.name }}\n                <span *ngFor="let ancestor of competency.comppath.ancestors">\n                    &nbsp;/&nbsp;<a (click)="openCompetencySummary(ancestor.id)">{{ ancestor.name }}</a>\n                </span>\n            </ion-item>\n        </ion-card>\n    </core-loading>\n</ion-content>\n'/*ion-inline-end:"/Users/vndtadmin/Desktop/Moodlemobile_lang/src/addon/competency/pages/competencysummary/competencysummary.html"*/,
+            selector: 'page-addon-competency-coursecompetencies',template:/*ion-inline-start:"/Users/vndtadmin/Desktop/Moodlemobile_lang/src/addon/competency/pages/coursecompetencies/coursecompetencies.html"*/'<ion-header>\n    <ion-navbar core-back-button>\n        <ion-title>{{ \'addon.competency.coursecompetencies\' | translate }}</ion-title>\n    </ion-navbar>\n</ion-header>\n<addon-competency-course class="core-avoid-header" [courseId]="courseId" [userId]="userId"></addon-competency-course>'/*ion-inline-end:"/Users/vndtadmin/Desktop/Moodlemobile_lang/src/addon/competency/pages/coursecompetencies/coursecompetencies.html"*/,
         }),
-        __param(3, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Optional */])()),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["u" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_utils_dom__["a" /* CoreDomUtilsProvider */],
-            __WEBPACK_IMPORTED_MODULE_3__components_split_view_split_view__["a" /* CoreSplitViewComponent */], __WEBPACK_IMPORTED_MODULE_4__providers_competency__["a" /* AddonCompetencyProvider */]])
-    ], AddonCompetencyCompetencySummaryPage);
-    return AddonCompetencyCompetencySummaryPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["u" /* NavParams */]])
+    ], AddonCompetencyCourseCompetenciesPage);
+    return AddonCompetencyCourseCompetenciesPage;
 }());
 
-//# sourceMappingURL=competencysummary.js.map
+//# sourceMappingURL=coursecompetencies.js.map
 
 /***/ })
 

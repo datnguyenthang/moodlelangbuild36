@@ -1,6 +1,6 @@
 webpackJsonp([26],{
 
-/***/ 1958:
+/***/ 1959:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10,7 +10,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__menu__ = __webpack_require__(2104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__menu__ = __webpack_require__(2106);
 // (C) Copyright 2015 Martin Dougiamas
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -57,7 +57,7 @@ var CoreMainMenuPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2104:
+/***/ 2106:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -129,6 +129,7 @@ var CoreMainMenuPage = /** @class */ (function () {
             this.navCtrl.setRoot('CoreLoginInitPage');
             return;
         }
+        this.loadCustomHandler();
         this.showTabs = true;
         this.redirectObs = this.eventsProvider.on(__WEBPACK_IMPORTED_MODULE_3__providers_events__["a" /* CoreEventsProvider */].LOAD_PAGE_MAIN_MENU, function (data) {
             if (!_this.loaded) {
@@ -210,13 +211,39 @@ var CoreMainMenuPage = /** @class */ (function () {
         this.subscription && this.subscription.unsubscribe();
         this.redirectObs && this.redirectObs.off();
     };
+    CoreMainMenuPage.prototype.loadCustomHandler = function () {
+        var _this = this;
+        // Load the handlers.
+        this.subscription = this.menuDelegate.getHandlers().subscribe(function (handlers) {
+            // Calculate the main handlers to not display them in this view.
+            var mainHandlers = handlers.filter(function (handler) {
+                return !handler.onlyInMore;
+            }).slice(0, __WEBPACK_IMPORTED_MODULE_5__providers_mainmenu__["a" /* CoreMainMenuProvider */].NUM_MAIN_HANDLERS);
+            // Get only the handlers that don't appear in the main view.
+            _this.handlers = [];
+            handlers.forEach(function (handler) {
+                if (mainHandlers.indexOf(handler) == -1) {
+                    _this.handlers.push(handler);
+                }
+            });
+            _this.handlersLoaded = _this.menuDelegate.areHandlersLoaded();
+        });
+    };
+    /**
+     * Open a handler.
+     *
+     * @param {CoreMainMenuHandlerData} handler Handler to open.
+     */
+    CoreMainMenuPage.prototype.openHandler = function (handler) {
+        this.navCtrl.push(handler.page, handler.pageParams);
+    };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])('mainTabs'),
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_4__components_ion_tabs_ion_tabs__["a" /* CoreIonTabsComponent */])
     ], CoreMainMenuPage.prototype, "mainTabs", void 0);
     CoreMainMenuPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-core-mainmenu',template:/*ion-inline-start:"/Users/vndtadmin/Desktop/Moodlemobile_lang/src/core/mainmenu/pages/menu/menu.html"*/'<core-ion-tabs #mainTabs [hidden]="!showTabs" [loaded]="loaded" tabsPlacement="bottom" tabsLayout="title-hide">\n    <core-ion-tab [enabled]="false" [show]="false" [root]="redirectPage" [rootParams]="redirectParams"></core-ion-tab>\n    <core-ion-tab *ngFor="let tab of tabs" [root]="tab.page" [rootParams]="tab.pageParams" [tabTitle]="tab.title | translate" [tabIcon]="tab.icon" [tabBadge]="tab.badge" class="{{tab.class}}"></core-ion-tab>\n    <core-ion-tab root="CoreMainMenuMorePage" [tabTitle]="\'core.more\' | translate" tabIcon="more"></core-ion-tab>\n</core-ion-tabs>\n'/*ion-inline-end:"/Users/vndtadmin/Desktop/Moodlemobile_lang/src/core/mainmenu/pages/menu/menu.html"*/,
+            selector: 'page-core-mainmenu',template:/*ion-inline-start:"/Users/vndtadmin/Desktop/Moodlemobile_lang/src/core/mainmenu/pages/menu/menu.html"*/'<core-ion-tabs #mainTabs [hidden]="!showTabs" [loaded]="loaded" tabsPlacement="bottom" tabsLayout="title-hide">\n    <core-ion-tab [enabled]="false" [show]="false" [root]="redirectPage" [rootParams]="redirectParams"></core-ion-tab>\n    <core-ion-tab *ngFor="let tab of tabs" [root]="tab.page" [rootParams]="tab.pageParams" [tabTitle]="tab.title | translate" [tabIcon]="tab.icon" [tabBadge]="tab.badge" class="{{tab.class}}"></core-ion-tab>\n    <core-ion-tab *ngFor="let handler of handlers" [root]="handler.page" [rootParams]="handler.pageParams"  [tabTitle]="handler.title | translate"  [tabIcon]="handler.icon" [tabBadge]="handler.badge" (onclick) ="openHandler(handler)" detail-push></core-ion-tab>\n    <core-ion-tab root="CoreMainMenuMorePage" [tabTitle]="\'core.more\' | translate" tabIcon="more"></core-ion-tab>\n</core-ion-tabs>\n'/*ion-inline-end:"/Users/vndtadmin/Desktop/Moodlemobile_lang/src/core/mainmenu/pages/menu/menu.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_6__providers_delegate__["a" /* CoreMainMenuDelegate */], __WEBPACK_IMPORTED_MODULE_2__providers_sites__["a" /* CoreSitesProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["u" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavController */], __WEBPACK_IMPORTED_MODULE_3__providers_events__["a" /* CoreEventsProvider */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["j" /* ChangeDetectorRef */]])

@@ -1,19 +1,17 @@
 webpackJsonp([117],{
 
-/***/ 1858:
+/***/ 1859:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonLandingMyLandingPageModule", function() { return AddonLandingMyLandingPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonLandingPopupPageModule", function() { return AddonLandingPopupPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_courses_components_components_module__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_directives_module__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pipes_pipes_module__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__my_landing__ = __webpack_require__(2000);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_directives_module__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__popup__ = __webpack_require__(2002);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__core_compile_components_compile_html_compile_html_module__ = __webpack_require__(391);
 // (C) Copyright 2015 Martin Dougiamas
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -39,44 +37,38 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
-
-var AddonLandingMyLandingPageModule = /** @class */ (function () {
-    function AddonLandingMyLandingPageModule() {
+var AddonLandingPopupPageModule = /** @class */ (function () {
+    function AddonLandingPopupPageModule() {
     }
-    AddonLandingMyLandingPageModule = __decorate([
+    AddonLandingPopupPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_7__my_landing__["a" /* AddonLandingMyLandingPage */],
+                __WEBPACK_IMPORTED_MODULE_4__popup__["a" /* AddonLandingPopupPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_4__components_components_module__["a" /* CoreComponentsModule */],
-                __WEBPACK_IMPORTED_MODULE_5__directives_directives_module__["a" /* CoreDirectivesModule */],
-                __WEBPACK_IMPORTED_MODULE_6__pipes_pipes_module__["a" /* CorePipesModule */],
-                __WEBPACK_IMPORTED_MODULE_3__core_courses_components_components_module__["a" /* CoreCoursesComponentsModule */],
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_7__my_landing__["a" /* AddonLandingMyLandingPage */]),
+                __WEBPACK_IMPORTED_MODULE_3__directives_directives_module__["a" /* CoreDirectivesModule */],
+                __WEBPACK_IMPORTED_MODULE_5__core_compile_components_compile_html_compile_html_module__["a" /* CoreCompileHtmlComponentModule */],
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_4__popup__["a" /* AddonLandingPopupPage */]),
                 __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */].forChild()
             ],
         })
-    ], AddonLandingMyLandingPageModule);
-    return AddonLandingMyLandingPageModule;
+    ], AddonLandingPopupPageModule);
+    return AddonLandingPopupPageModule;
 }());
 
-//# sourceMappingURL=my-landing.module.js.map
+//# sourceMappingURL=popup.module.js.map
 
 /***/ }),
 
-/***/ 2000:
+/***/ 2002:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddonLandingMyLandingPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddonLandingPopupPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_sites__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_tabs_tabs__ = __webpack_require__(138);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_landing__ = __webpack_require__(399);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_utils_dom__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_course_providers_helper__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_sites__ = __webpack_require__(2);
 // (C) Copyright 2015 Martin Dougiamas
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -103,80 +95,37 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-
 /**
- * Page this show up about FE School.
+ * Component that displays some help regarding the CoreLoginSitePage.
  */
-var AddonLandingMyLandingPage = /** @class */ (function () {
-    function AddonLandingMyLandingPage(sitesProvider, landingProvider, navCtrl, domUtils) {
+var AddonLandingPopupPage = /** @class */ (function () {
+    function AddonLandingPopupPage(params, viewCtrl, courseHelper, sitesProvider) {
+        this.viewCtrl = viewCtrl;
+        this.courseHelper = courseHelper;
         this.sitesProvider = sitesProvider;
-        this.landingProvider = landingProvider;
-        this.navCtrl = navCtrl;
-        this.domUtils = domUtils;
-        this.landingLoaded = false;
-        this.loadSiteName();
-        this.landingProvider.initPopup();
+        this.data = params.get('data');
     }
     /**
-     * Go to specific page.
+     * Close help modal.
      */
-    AddonLandingMyLandingPage.prototype.openCataloguePage = function (pageAddress) {
-        this.navCtrl.push(pageAddress);
+    AddonLandingPopupPage.prototype.closeHelp = function () {
+        this.viewCtrl.dismiss();
     };
-    /**
-     * Go to search courses.
-     */
-    AddonLandingMyLandingPage.prototype.openSearch = function () {
-        this.navCtrl.push('CoreCoursesSearchPage');
+    AddonLandingPopupPage.prototype.openActivity = function (moduleid, courseid, modname) {
+        this.courseHelper.navigateToModule(moduleid, this.sitesProvider.getCurrentSiteId(), courseid, undefined, modname);
+        this.closeHelp();
     };
-    /**
-     * Load the site name.
-     */
-    AddonLandingMyLandingPage.prototype.loadSiteName = function () {
-        this.siteName = this.sitesProvider.getCurrentSite().getInfo().sitename;
-    };
-    /**
-     * Page destroyed.
-     */
-    AddonLandingMyLandingPage.prototype.ngOnDestroy = function () {
-        this.isDestroyed = true;
-    };
-    /**
-     * Refresh the data.
-     *
-     * @param  {any} [refresher] Refresher.
-     * @return {Promise<any>} Promise resolved when done.
-     */
-    AddonLandingMyLandingPage.prototype.doRefresh = function (refresher) {
-        this.landingProvider.initPopup();
-        refresher.complete();
-    };
-    /**
-     * View loaded.
-     */
-    AddonLandingMyLandingPage.prototype.ionViewDidLoad = function () {
-        this.landingLoaded = true;
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_3__components_tabs_tabs__["a" /* CoreTabsComponent */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3__components_tabs_tabs__["a" /* CoreTabsComponent */])
-    ], AddonLandingMyLandingPage.prototype, "tabsComponent", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])('searchbar'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["z" /* Searchbar */])
-    ], AddonLandingMyLandingPage.prototype, "searchbar", void 0);
-    AddonLandingMyLandingPage = __decorate([
+    AddonLandingPopupPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-landing-my-landing',template:/*ion-inline-start:"/Users/vndtadmin/Desktop/Moodlemobile_lang/src/addon/landing/pages/my-landing/my-landing.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title><core-format-text [text]="siteName"></core-format-text></ion-title>\n\n        <ion-buttons end>\n            <button ion-button icon-only (click)="openSearch()" [attr.aria-p]="\'core.courses.searchcourses\' | translate">\n                <ion-icon name="search"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <ion-refresher [enabled]="landingLoaded" (ionRefresh)="doRefresh($event)">\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n    </ion-refresher>\n    <core-loading [hideUntil]="landingLoaded">\n        \n        <div class="box" ion-fixed>\n            <div class="row">\n                    <div class="col" id="s-o-s" (click)="openCataloguePage(\'AddonSchoolOfSalesMySchoolOfSalesPage\')">\n                        <div class="item">\n                            <img src="assets/img/landing/sales.svg">\n                            <p>{{ \'addon.landing.schoolofsale\' | translate }}</p>\n                        </div>\n                    </div>\n                    <div class="col" id="s-o-r" (click)="openCataloguePage(\'AddonSchoolOfRecoveryMySchoolOfRecoveryPage\')">\n                        <div class="item">\n                            <img src="assets/img/landing/recovery.svg">\n                            <p>{{ \'addon.landing.schoolofrecovery\' | translate }}</p>\n                        </div>\n                    </div>\n            </div>\n            <div class="row">\n                    <div class="col" id="f-a" (click)="openCataloguePage(\'AddonFeAcademyMyFeAcademyPage\')">\n                        <div class="item">\n                            <img src="assets/img/landing/fe-academy.svg">\n                            <p>{{ \'addon.landing.feacademy\' | translate }}</p>\n                        </div>\n                    </div>\n                    <div class="col" id="m-c" (click)="openCataloguePage(\'AddonMandatoryMyMandatoryPage\')">\n                        <div class="item">\n                            <img src="assets/img/landing/mandatory.svg">\n                            <p>{{ \'addon.landing.mandatorycourse\' | translate }}</p>\n                        </div>\n                    </div>\n            </div>\n        </div>\n    </core-loading>\n</ion-content>'/*ion-inline-end:"/Users/vndtadmin/Desktop/Moodlemobile_lang/src/addon/landing/pages/my-landing/my-landing.html"*/,
+            selector: 'addon-landing-popup',template:/*ion-inline-start:"/Users/vndtadmin/Desktop/Moodlemobile_lang/src/addon/landing/pages/popup/addon-landing-popup.html"*/'<ion-content padding class="main-view">\n    <div class="overlay" (click)="closeHelp()"></div>\n    <div class="modal_content">\n        <!--\n        <div class="close" (click)="closeHelp()">\n            <ion-icon ios="ios-close-circle" md="md-close-circle"></ion-icon>\n        </div>\n        -->\n        <ion-slides class="popup-slides" loop="true" pager="true" autoplay="3000">\n            <ion-slide *ngFor="let slide of data">\n                <a (click)="openActivity(slide.moduleid, slide.courseid, slide.modname)">\n                        <img class="lazy-loaded" src="{{slide.image}}" >\n                </a>\n            </ion-slide>\n        </ion-slides>\n    </div>\n</ion-content>'/*ion-inline-end:"/Users/vndtadmin/Desktop/Moodlemobile_lang/src/addon/landing/pages/popup/addon-landing-popup.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_sites__["a" /* CoreSitesProvider */], __WEBPACK_IMPORTED_MODULE_4__providers_landing__["a" /* AddonLandingProvider */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavController */], __WEBPACK_IMPORTED_MODULE_5__providers_utils_dom__["a" /* CoreDomUtilsProvider */]])
-    ], AddonLandingMyLandingPage);
-    return AddonLandingMyLandingPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["u" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["F" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__core_course_providers_helper__["a" /* CoreCourseHelperProvider */], __WEBPACK_IMPORTED_MODULE_3__providers_sites__["a" /* CoreSitesProvider */]])
+    ], AddonLandingPopupPage);
+    return AddonLandingPopupPage;
 }());
 
-//# sourceMappingURL=my-landing.js.map
+//# sourceMappingURL=popup.js.map
 
 /***/ })
 

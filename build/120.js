@@ -1,11 +1,11 @@
 webpackJsonp([120],{
 
-/***/ 1854:
+/***/ 1856:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonEvaluateInputInfoPagePageModule", function() { return AddonEvaluateInputInfoPagePageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonFeAcademyMyFeAcademyPageModule", function() { return AddonFeAcademyMyFeAcademyPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
@@ -13,7 +13,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_directives_module__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pipes_pipes_module__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__input_info__ = __webpack_require__(1994);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__my_feacademy__ = __webpack_require__(1999);
 // (C) Copyright 2015 Martin Dougiamas
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -41,36 +41,36 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var AddonEvaluateInputInfoPagePageModule = /** @class */ (function () {
-    function AddonEvaluateInputInfoPagePageModule() {
+var AddonFeAcademyMyFeAcademyPageModule = /** @class */ (function () {
+    function AddonFeAcademyMyFeAcademyPageModule() {
     }
-    AddonEvaluateInputInfoPagePageModule = __decorate([
+    AddonFeAcademyMyFeAcademyPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_7__input_info__["a" /* AddonEvaluateInputInfoPage */],
+                __WEBPACK_IMPORTED_MODULE_7__my_feacademy__["a" /* AddonFeAcademyMyFeAcademyPage */],
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_4__components_components_module__["a" /* CoreComponentsModule */],
                 __WEBPACK_IMPORTED_MODULE_5__directives_directives_module__["a" /* CoreDirectivesModule */],
                 __WEBPACK_IMPORTED_MODULE_6__pipes_pipes_module__["a" /* CorePipesModule */],
                 __WEBPACK_IMPORTED_MODULE_3__core_courses_components_components_module__["a" /* CoreCoursesComponentsModule */],
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_7__input_info__["a" /* AddonEvaluateInputInfoPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_7__my_feacademy__["a" /* AddonFeAcademyMyFeAcademyPage */]),
                 __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */].forChild()
             ],
         })
-    ], AddonEvaluateInputInfoPagePageModule);
-    return AddonEvaluateInputInfoPagePageModule;
+    ], AddonFeAcademyMyFeAcademyPageModule);
+    return AddonFeAcademyMyFeAcademyPageModule;
 }());
 
-//# sourceMappingURL=input-info.module.js.map
+//# sourceMappingURL=my-feacademy.module.js.map
 
 /***/ }),
 
-/***/ 1994:
+/***/ 1999:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddonEvaluateInputInfoPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddonFeAcademyMyFeAcademyPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_courses_providers_courses__ = __webpack_require__(33);
@@ -78,16 +78,13 @@ var AddonEvaluateInputInfoPagePageModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_utils_utils__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_sites__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_events__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__core_user_providers_user__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_data_service__ = __webpack_require__(945);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_app__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__addon_block_timeline_providers_timeline__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__core_course_providers_helper__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__core_course_providers_options_delegate__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_tabs_tabs__ = __webpack_require__(138);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__angular_forms__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_evaluate__ = __webpack_require__(396);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ngx_translate_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_app__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__addon_block_timeline_providers_timeline__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__core_course_providers_helper__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__core_course_providers_options_delegate__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_moment__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_moment__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_tabs_tabs__ = __webpack_require__(138);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -123,16 +120,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-
-
-
 /**
  * Page that displays the list of calendar events.
  */
-var AddonEvaluateInputInfoPage = /** @class */ (function () {
-    function AddonEvaluateInputInfoPage(domUtils, coursesProvider, utils, myOverviewProvider, sitesProvider, courseHelper, courseOptionsDelegate, eventsProvider, navCtrl, appProvider, evaluateProvider, fb, translate, alertController, navParams, data, userProvider) {
-        var _this = this;
+var AddonFeAcademyMyFeAcademyPage = /** @class */ (function () {
+    function AddonFeAcademyMyFeAcademyPage(domUtils, coursesProvider, utils, myOverviewProvider, sitesProvider, courseHelper, courseOptionsDelegate, eventsProvider, navCtrl, appProvider) {
         this.domUtils = domUtils;
         this.coursesProvider = coursesProvider;
         this.utils = utils;
@@ -142,138 +134,323 @@ var AddonEvaluateInputInfoPage = /** @class */ (function () {
         this.courseOptionsDelegate = courseOptionsDelegate;
         this.eventsProvider = eventsProvider;
         this.navCtrl = navCtrl;
-        this.translate = translate;
-        this.alertController = alertController;
-        this.data = data;
-        this.userProvider = userProvider;
-        this.pageLoaded = false;
-        this.boxClass = '';
+        this.courses = {
+            selected: 'inprogress',
+            loaded: false,
+            filter: '',
+            past: [],
+            inprogress: [],
+            future: []
+        };
+        this.tabShown = 'courses';
+        this.showFilter = false;
+        this.timeline = {
+            sort: 'sortbydates',
+            events: [],
+            loaded: false,
+            canLoadMore: undefined
+        };
+        this.timelineCourses = {
+            courses: [],
+            loaded: false,
+            canLoadMore: false
+        };
+        this.prefetchCoursesData = {
+            inprogress: {},
+            past: {},
+            future: {}
+        };
         this.prefetchIconsInitialized = false;
         this.courseIds = '';
-        this.evaluateProvider = evaluateProvider;
-        this.loadSiteInfo();
-        this.userProvider.getProfile(this.sitesProvider.getCurrentSiteUserId(), 1).then(function (user) {
-            _this.credForm.controls['fullname'].setValue(user.fullname);
-            _this.credForm.controls['email'].setValue(user.email);
-        });
-        this.credForm = fb.group({
-            coursecode: ['', __WEBPACK_IMPORTED_MODULE_14__angular_forms__["h" /* Validators */].required],
-            fullname: [''],
-            email: [''],
-            cmnd: ['']
-        });
-        this.boxClass = 'box box-bg';
-        this.evaluateCode = navParams.get('evaluateCode');
-        this.credForm.controls['coursecode'].setValue(this.evaluateCode);
-        // this.events.subscribe('scanner:evaluateCode',(evaluateCode)=>{
-        //     console.log(evaluateCode);
-        //     this.credForm.controls['coursecode'].setValue(evaluateCode);  
-        // });
+        this.loadSiteName();
     }
     /**
      * View loaded.
      */
-    AddonEvaluateInputInfoPage.prototype.ionViewDidLoad = function () {
-        // if (window['globalVariable'] && window['globalVariable'].evaluateCode) {
-        //     // console.log(window['globalVariable'])
-        //     this.credForm.controls['coursecode'].setValue(window['globalVariable'].evaluateCode);  
-        //     window['globalVariable'].evaluateCode = '';
-        // }
-        // this.data.currentMessage.subscribe( (message) => {
-        //     console.log(message);
-        // });
-        if (this.data.getOrigin() == 'scanner') {
-            this.credForm.controls['coursecode'].setValue(this.data.getData());
-        }
-        this.pageLoaded = true;
-    };
-    AddonEvaluateInputInfoPage.prototype.ionViewWillEnter = function () {
-        if (this.data.getOrigin() == 'scanner') {
-            this.credForm.controls['coursecode'].setValue(this.data.getData());
-        }
-    };
-    AddonEvaluateInputInfoPage.prototype.ionViewDidEnter = function () {
-        if (this.data.getOrigin() == 'scanner') {
-            this.credForm.controls['coursecode'].setValue(this.data.getData());
-        }
-    };
-    AddonEvaluateInputInfoPage.prototype.focusInSelect = function () {
-        this.boxClass = 'box';
-    };
-    AddonEvaluateInputInfoPage.prototype.focusOutSelect = function () {
-        this.boxClass = 'box box-bg';
-    };
-    AddonEvaluateInputInfoPage.prototype.checkcode = function () {
+    AddonFeAcademyMyFeAcademyPage.prototype.ionViewDidLoad = function () {
         var _this = this;
-        var coursecode = this.credForm.value.coursecode;
-        var fullname = this.credForm.value.fullname;
-        var email = this.credForm.value.email;
-        var cmnd = this.credForm.value.cmnd;
-        var modal = this.domUtils.showModalLoading();
-        // Start the authentication process.
-        this.evaluateProvider.checkCourseCode(null, coursecode).then(function (data) {
-            var status = Boolean(data['status']);
-            if (status == true) {
-                var detail = data['detail'];
-                _this.navCtrl.push('AddonEvaluateSubmitEvaluatePage', { coursecode: coursecode, fullname: fullname, email: email, cmnd: cmnd, detail: detail });
+        this.searchEnabled = !this.coursesProvider.isSearchCoursesDisabledInSite();
+        this.downloadAllCoursesEnabled = !this.coursesProvider.isDownloadCoursesDisabledInSite();
+        // Refresh the enabled flags if site is updated.
+        this.updateSiteObserver = this.eventsProvider.on(__WEBPACK_IMPORTED_MODULE_6__providers_events__["a" /* CoreEventsProvider */].SITE_UPDATED, function () {
+            var wasEnabled = _this.downloadAllCoursesEnabled;
+            _this.searchEnabled = !_this.coursesProvider.isSearchCoursesDisabledInSite();
+            _this.downloadAllCoursesEnabled = !_this.coursesProvider.isDownloadCoursesDisabledInSite();
+            if (!wasEnabled && _this.downloadAllCoursesEnabled && _this.courses.loaded) {
+                // Download all courses is enabled now, initialize it.
+                _this.initPrefetchCoursesIcons();
             }
-            else {
-                _this.domUtils.showErrorModal(_this.translate.instant('addon.evaluate.messagecoursecodeinvalid'), true);
+            _this.loadSiteName();
+        });
+        if (!this.courses.loaded) {
+            this.fetchMyOverviewCourses().finally(function () {
+                _this.courses.loaded = true;
+            });
+        }
+    };
+    /**
+     * Fetch the timeline.
+     *
+     * @param {number} [afterEventId] The last event id.
+     * @return {Promise<any>} Promise resolved when done.
+     */
+    AddonFeAcademyMyFeAcademyPage.prototype.fetchMyOverviewTimeline = function (afterEventId) {
+        var _this = this;
+        return this.myOverviewProvider.getActionEventsByTimesort(afterEventId).then(function (events) {
+            _this.timeline.events = events.events;
+            _this.timeline.canLoadMore = events.canLoadMore;
+        }).catch(function (error) {
+            _this.domUtils.showErrorModalDefault(error, 'Error getting my overview data.');
+        });
+    };
+    /**
+     * Go to search courses.
+     */
+    AddonFeAcademyMyFeAcademyPage.prototype.openSearch = function () {
+        this.navCtrl.push('CoreCoursesSearchPage');
+    };
+    /**
+     * Fetch the timeline by courses.
+     *
+     * @return {Promise<any>} Promise resolved when done.
+     */
+    AddonFeAcademyMyFeAcademyPage.prototype.fetchMyOverviewTimelineByCourses = function () {
+        var _this = this;
+        return this.fetchUserCourses().then(function (courses) {
+            var today = __WEBPACK_IMPORTED_MODULE_11_moment__().unix();
+            var courseIds;
+            courses = courses.filter(function (course) {
+                return course.startdate <= today && (!course.enddate || course.enddate >= today);
+            });
+            _this.timelineCourses.courses = courses;
+            if (courses.length > 0) {
+                courseIds = courses.map(function (course) {
+                    return course.id;
+                });
+                return _this.myOverviewProvider.getActionEventsByCourses(courseIds).then(function (courseEvents) {
+                    _this.timelineCourses.courses.forEach(function (course) {
+                        course.events = courseEvents[course.id].events;
+                        course.canLoadMore = courseEvents[course.id].canLoadMore;
+                    });
+                });
             }
         }).catch(function (error) {
-            _this.domUtils.showErrorModal(error, true);
-        }).finally(function () {
-            modal.dismiss();
+            _this.domUtils.showErrorModalDefault(error, 'Error getting my overview data.');
         });
-        return;
     };
     /**
-     * Load the site info.
+     * Show or hide the filter.
      */
-    AddonEvaluateInputInfoPage.prototype.loadSiteInfo = function () {
-        this.siteName = this.sitesProvider.getCurrentSite().getInfo().sitename;
-        this.siteUrl = this.sitesProvider.getCurrentSite().getInfo().siteurl;
-    };
-    /**
-     * Component being initialized.
-     */
-    AddonEvaluateInputInfoPage.prototype.ngOnInit = function () {
-        if (this.data.getOrigin() == 'scanner') {
-            this.credForm.controls['coursecode'].setValue(this.data.getData());
+    AddonFeAcademyMyFeAcademyPage.prototype.switchFilter = function () {
+        var _this = this;
+        this.showFilter = !this.showFilter;
+        this.courses.filter = '';
+        this.filteredCourses = this.courses[this.courses.selected];
+        if (this.showFilter) {
+            setTimeout(function () {
+                _this.searchbar.setFocus();
+            });
         }
+    };
+    /**
+     * Fetch the courses for my overview.
+     *
+     * @return {Promise<any>} Promise resolved when done.
+     */
+    AddonFeAcademyMyFeAcademyPage.prototype.fetchMyOverviewCourses = function () {
+        var _this = this;
+        return this.fetchUserCourses().then(function (courses) {
+            var today = __WEBPACK_IMPORTED_MODULE_11_moment__().unix(), categoryList = [];
+            _this.courses.past = [];
+            _this.courses.inprogress = [];
+            _this.courses.future = [];
+            courses.forEach(function (course) {
+                if (course.startdate > today) {
+                    // Courses that have not started yet.
+                    _this.courses.future.push(course);
+                }
+                else if (course.enddate && course.enddate < today) {
+                    // Courses that have already ended.
+                    _this.courses.past.push(course);
+                }
+                else {
+                    // Courses still in progress.
+                    _this.courses.inprogress.push(course);
+                }
+                if (!categoryList.find(function (el) { return el.id == course.category; })) {
+                    categoryList.push({ id: course.category,
+                        name: course.categoryname,
+                        description: course.categorydescription,
+                        courses: [] });
+                }
+            });
+            categoryList.forEach(function (category) {
+                courses.forEach(function (course) {
+                    if (category.id == course.category) {
+                        category.courses.push(course);
+                    }
+                });
+            });
+            categoryList.sort(function (a, b) {
+                return a.id - b.id;
+            });
+            _this.filteredCategory = categoryList;
+            _this.courses.filter = '';
+            _this.showFilter = false;
+            _this.filteredCourses = _this.courses[_this.courses.selected];
+            _this.initPrefetchCoursesIcons();
+        }).catch(function (error) {
+            _this.domUtils.showErrorModalDefault(error, 'Error getting my overview data.');
+        });
+    };
+    /**
+     * Fetch user courses.
+     *
+     * @return {Promise<any>} Promise resolved when done.
+     */
+    AddonFeAcademyMyFeAcademyPage.prototype.fetchUserCourses = function () {
+        var _this = this;
+        return this.coursesProvider.getUserCourses(null, null, 5).then(function (courses) {
+            var promises = [], courseIds = courses.map(function (course) {
+                return course.id;
+            });
+            if (_this.coursesProvider.canGetAdminAndNavOptions()) {
+                // Load course options of the course.
+                promises.push(_this.coursesProvider.getCoursesAdminAndNavOptions(courseIds).then(function (options) {
+                    courses.forEach(function (course) {
+                        course.navOptions = options.navOptions[course.id];
+                        course.admOptions = options.admOptions[course.id];
+                    });
+                }));
+            }
+            _this.courseIds = courseIds.join(',');
+            if (_this.courseIds && _this.coursesProvider.isGetCoursesByFieldAvailable()) {
+                // Load course image of all the courses.
+                promises.push(_this.coursesProvider.getCoursesByField('ids', _this.courseIds).then(function (coursesInfo) {
+                    coursesInfo = _this.utils.arrayToObject(coursesInfo, 'id');
+                    courses.forEach(function (course) {
+                        if (coursesInfo[course.id] && coursesInfo[course.id].overviewfiles &&
+                            coursesInfo[course.id].overviewfiles[0]) {
+                            course.imageThumb = coursesInfo[course.id].overviewfiles[0].fileurl;
+                        }
+                        else {
+                            course.imageThumb = false;
+                        }
+                    });
+                }));
+            }
+            /*
+            return Promise.all(promises).then(() => {
+                return courses.sort((a, b) => {
+                    const compareA = a.fullname.toLowerCase(),
+                        compareB = b.fullname.toLowerCase();
+
+                    return compareA.localeCompare(compareB);
+                });
+            });
+            */
+            return courses;
+        });
+    };
+    /**
+     * Initialize the prefetch icon for selected courses.
+     */
+    AddonFeAcademyMyFeAcademyPage.prototype.initPrefetchCoursesIcons = function () {
+        var _this = this;
+        if (this.prefetchIconsInitialized || !this.downloadAllCoursesEnabled) {
+            // Already initialized.
+            return;
+        }
+        this.prefetchIconsInitialized = true;
+        Object.keys(this.prefetchCoursesData).forEach(function (filter) {
+            if (!_this.courses[filter] || _this.courses[filter].length < 2) {
+                // Not enough courses.
+                _this.prefetchCoursesData[filter].icon = '';
+                return;
+            }
+            _this.courseHelper.determineCoursesStatus(_this.courses[filter]).then(function (status) {
+                var icon = _this.courseHelper.getCourseStatusIconAndTitleFromStatus(status).icon;
+                if (icon == 'spinner') {
+                    // It seems all courses are being downloaded, show a download button instead.
+                    icon = 'cloud-download';
+                }
+                _this.prefetchCoursesData[filter].icon = icon;
+            });
+        });
+    };
+    /**
+     * Refresh the data.
+     *
+     * @param {any} refresher Refresher.
+     * @return {Promise<any>} Promise resolved when done.
+     */
+    AddonFeAcademyMyFeAcademyPage.prototype.refreshMyOverview = function (refresher) {
+        var _this = this;
+        var promises = [];
+        if (this.tabShown == 'timeline') {
+            promises.push(this.myOverviewProvider.invalidateActionEventsByTimesort());
+            promises.push(this.myOverviewProvider.invalidateActionEventsByCourses());
+        }
+        promises.push(this.coursesProvider.invalidateUserCourses());
+        promises.push(this.courseOptionsDelegate.clearAndInvalidateCoursesOptions());
+        if (this.courseIds) {
+            promises.push(this.coursesProvider.invalidateCoursesByField('ids', this.courseIds));
+        }
+        return Promise.all(promises).finally(function () {
+            switch (_this.tabShown) {
+                case 'timeline':
+                    switch (_this.timeline.sort) {
+                        case 'sortbydates':
+                            return _this.fetchMyOverviewTimeline();
+                        case 'sortbycourses':
+                            return _this.fetchMyOverviewTimelineByCourses();
+                        default:
+                    }
+                    break;
+                case 'courses':
+                    _this.prefetchIconsInitialized = false;
+                    return _this.fetchMyOverviewCourses();
+                default:
+            }
+        }).finally(function () {
+            refresher.complete();
+        });
+    };
+    /**
+     * Load the site name.
+     */
+    AddonFeAcademyMyFeAcademyPage.prototype.loadSiteName = function () {
+        this.siteName = this.sitesProvider.getCurrentSite().getInfo().sitename;
     };
     /**
      * Page destroyed.
      */
-    AddonEvaluateInputInfoPage.prototype.ngOnDestroy = function () {
+    AddonFeAcademyMyFeAcademyPage.prototype.ngOnDestroy = function () {
         this.isDestroyed = true;
         this.updateSiteObserver && this.updateSiteObserver.off();
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_13__components_tabs_tabs__["a" /* CoreTabsComponent */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_13__components_tabs_tabs__["a" /* CoreTabsComponent */])
-    ], AddonEvaluateInputInfoPage.prototype, "tabsComponent", void 0);
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_12__components_tabs_tabs__["a" /* CoreTabsComponent */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_12__components_tabs_tabs__["a" /* CoreTabsComponent */])
+    ], AddonFeAcademyMyFeAcademyPage.prototype, "tabsComponent", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])('searchbar'),
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["z" /* Searchbar */])
-    ], AddonEvaluateInputInfoPage.prototype, "searchbar", void 0);
-    AddonEvaluateInputInfoPage = __decorate([
+    ], AddonFeAcademyMyFeAcademyPage.prototype, "searchbar", void 0);
+    AddonFeAcademyMyFeAcademyPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-evaluate-input-info',template:/*ion-inline-start:"/Users/vndtadmin/Desktop/Moodlemobile_lang/src/addon/evaluate/pages/input-info/input-info.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title (click)="exitQR()"><core-format-text [text]="siteName"></core-format-text></ion-title>\n        <ion-buttons end>\n            <button *ngIf="searchEnabled" ion-button icon-only (click)="openSearch()" [attr.aria-label]="\'core.courses.searchcourses\' | translate">\n                <ion-icon name="search"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content class="core-center-view">\n    <div class="box" ion-fixed >\n        <form ion-list [formGroup]="credForm" (ngSubmit)="checkcode()">\n            <div text-wrap text-center margin-bottom>\n                <h3>{{ \'addon.evaluate.evaluate\' | translate }}</h3>\n            </div>\n            <div class="inputs-control">\n                <ion-item>\n                    <ion-input type="text" name="coursecode" placeholder="{{ \'addon.evaluate.coursecode\' | translate }}" formControlName="coursecode" autocapitalize="none" autocorrect="off"></ion-input>\n                </ion-item>\n                <ion-item>\n                    <ion-input type="text" name="fullname" placeholder="{{ \'addon.evaluate.fullname\' | translate }}" formControlName="fullname" autocapitalize="none" autocorrect="off"></ion-input>\n                </ion-item>\n                <ion-item>\n                    <ion-input type="text" name="email" placeholder="{{ \'addon.evaluate.email\' | translate }}" formControlName="email" autocapitalize="none" autocorrect="off" ></ion-input>\n                </ion-item>\n                <ion-item margin-bottom>\n                    <ion-input type="text" name="cmnd" placeholder="{{ \'addon.evaluate.cmnd\' | translate }}" formControlName="cmnd" autocapitalize="none" autocorrect="off" ></ion-input>\n                </ion-item>\n                <button ion-button block [disabled]="!credForm.valid">{{ \'addon.evaluate.btnnext\' | translate }}</button> \n            </div>\n            <img class="thumbs-evaluate" src="assets/img/thumbs-evaluate.svg">\n        </form>\n    </div>\n</ion-content>\n'/*ion-inline-end:"/Users/vndtadmin/Desktop/Moodlemobile_lang/src/addon/evaluate/pages/input-info/input-info.html"*/,
+            selector: 'page-addon-feacademy-my-feacademy',template:/*ion-inline-start:"/Users/vndtadmin/Desktop/Moodlemobile_lang/src/addon/feacademy/pages/my-feacademy/my-feacademy.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title><core-format-text [text]="siteName"></core-format-text></ion-title>\n\n        <ion-buttons end>\n            <button *ngIf="searchEnabled" ion-button icon-only (click)="openSearch()" [attr.aria-label]="\'core.courses.searchcourses\' | translate">\n                <ion-icon name="search"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n   \n    <ion-refresher [enabled]="timeline.loaded || timelineCourses.loaded || courses.loaded" (ionRefresh)="refreshMyOverview($event)">\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n    </ion-refresher>\n\n    <core-loading [hideUntil]="courses.loaded" class="core-loading-center">\n        <core-empty-box *ngIf="courses[courses.selected].length == 0 && courses.selected == \'inprogress\'" image="assets/img/icons/courses.svg" [message]="\'core.courses.nocoursesinprogress\' | translate"></core-empty-box>\n        <core-empty-box *ngIf="courses[courses.selected].length == 0 && courses.selected == \'future\'" image="assets/img/icons/courses.svg" [message]="\'core.courses.nocoursesfuture\' | translate"></core-empty-box>\n        <core-empty-box *ngIf="courses[courses.selected].length == 0 && courses.selected == \'past\'" image="assets/img/icons/courses.svg" [message]="\'core.courses.nocoursespast\' | translate"></core-empty-box>\n        <div>\n            <core-courses-course-list-group class="feacademy" [categories]="filteredCategory">\n            </core-courses-course-list-group>\n        </div>\n    </core-loading>\n\n</ion-content>'/*ion-inline-end:"/Users/vndtadmin/Desktop/Moodlemobile_lang/src/addon/feacademy/pages/my-feacademy/my-feacademy.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__providers_utils_dom__["a" /* CoreDomUtilsProvider */],
             __WEBPACK_IMPORTED_MODULE_2__core_courses_providers_courses__["a" /* CoreCoursesProvider */], __WEBPACK_IMPORTED_MODULE_4__providers_utils_utils__["a" /* CoreUtilsProvider */],
-            __WEBPACK_IMPORTED_MODULE_10__addon_block_timeline_providers_timeline__["a" /* AddonBlockTimelineProvider */], __WEBPACK_IMPORTED_MODULE_5__providers_sites__["a" /* CoreSitesProvider */],
-            __WEBPACK_IMPORTED_MODULE_11__core_course_providers_helper__["a" /* CoreCourseHelperProvider */], __WEBPACK_IMPORTED_MODULE_12__core_course_providers_options_delegate__["a" /* CoreCourseOptionsDelegate */],
-            __WEBPACK_IMPORTED_MODULE_6__providers_events__["a" /* CoreEventsProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavController */], __WEBPACK_IMPORTED_MODULE_9__providers_app__["a" /* CoreAppProvider */],
-            __WEBPACK_IMPORTED_MODULE_15__providers_evaluate__["a" /* AddonEvaluateProvider */], __WEBPACK_IMPORTED_MODULE_14__angular_forms__["a" /* FormBuilder */], __WEBPACK_IMPORTED_MODULE_16__ngx_translate_core__["c" /* TranslateService */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["u" /* NavParams */], __WEBPACK_IMPORTED_MODULE_8__providers_data_service__["a" /* DataService */],
-            __WEBPACK_IMPORTED_MODULE_7__core_user_providers_user__["a" /* CoreUserProvider */]])
-    ], AddonEvaluateInputInfoPage);
-    return AddonEvaluateInputInfoPage;
+            __WEBPACK_IMPORTED_MODULE_8__addon_block_timeline_providers_timeline__["a" /* AddonBlockTimelineProvider */], __WEBPACK_IMPORTED_MODULE_5__providers_sites__["a" /* CoreSitesProvider */],
+            __WEBPACK_IMPORTED_MODULE_9__core_course_providers_helper__["a" /* CoreCourseHelperProvider */], __WEBPACK_IMPORTED_MODULE_10__core_course_providers_options_delegate__["a" /* CoreCourseOptionsDelegate */],
+            __WEBPACK_IMPORTED_MODULE_6__providers_events__["a" /* CoreEventsProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavController */], __WEBPACK_IMPORTED_MODULE_7__providers_app__["a" /* CoreAppProvider */]])
+    ], AddonFeAcademyMyFeAcademyPage);
+    return AddonFeAcademyMyFeAcademyPage;
 }());
 
-//# sourceMappingURL=input-info.js.map
+//# sourceMappingURL=my-feacademy.js.map
 
 /***/ })
 
